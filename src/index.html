@@ -4,20 +4,37 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>GOIT JS HW 12</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
+    <form class="search-form">
+      <div class="form">
+        <input
+          class="input-search"
+          type="text"
+          name="query"
+          placeholder="Search images..."
+        />
+      </div>
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+      <button class="btn-search" type="submit">Search</button>
+    </form>
+    <div class="gallery-box">
+      <ul class="gallery"></ul>
+    </div>
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+    <span class="span-loader"></span>
 
     <script type="module" src="./main.js"></script>
   </body>
