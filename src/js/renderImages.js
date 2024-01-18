@@ -1,3 +1,5 @@
+import { refs } from './refs';
+
 export const renderImages = (hits = []) => {
   const markup = hits.reduce(
     (html, img) =>
@@ -34,5 +36,5 @@ export const renderImages = (hits = []) => {
 </li>`,
     ''
   );
-  galleryRef.insertAdjacentHTML('beforeend', markup);
+  refs.galleryRef.insertAdjacentHTML('beforeend', markup);
 };
