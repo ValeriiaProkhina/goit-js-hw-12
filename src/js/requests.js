@@ -61,7 +61,6 @@ export const createGetImagesRequest = q => {
       }
 
       page += 1;
-      refs.searchFormRef.reset();
       return hits;
     } catch {
       error => {
@@ -72,6 +71,7 @@ export const createGetImagesRequest = q => {
       };
     } finally {
       hiddenLoader();
+      refs.searchFormRef.reset();
     }
   };
 };
