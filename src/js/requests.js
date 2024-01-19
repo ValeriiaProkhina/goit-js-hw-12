@@ -2,6 +2,7 @@ import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import { refs } from './refs';
+import { onScroll } from './onScroll';
 
 const apiKey = '41747369-46a857856bf510ac3748d6666';
 const getImages = async params => {

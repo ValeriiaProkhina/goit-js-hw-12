@@ -37,7 +37,9 @@ const searchSubmit = async evt => {
     });
     renderImages(hits);
     lightbox.refresh();
-    onScroll();
+    if (document.querySelectorAll('.img-item').length > 40) {
+      onScroll();
+    }
   };
 
   await doFetch();
