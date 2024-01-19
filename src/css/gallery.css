@@ -89,7 +89,7 @@ body {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  display: block;
+  display: none;
   margin: 15px auto;
   position: relative;
   color: #4e75ff;

@@ -1,4 +1,5 @@
 import { refs } from './refs';
+import { lightbox } from './lightbox';
 
 export const renderImages = (hits = []) => {
   const markup = hits.reduce(
@@ -37,4 +38,5 @@ export const renderImages = (hits = []) => {
     ''
   );
   refs.galleryRef.insertAdjacentHTML('beforeend', markup);
+  lightbox.refresh();
 };
