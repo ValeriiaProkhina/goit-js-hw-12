@@ -52,7 +52,7 @@ export const createGetImagesRequest = q => {
         });
       } else if (page >= Math.ceil(totalHits / per_page)) {
         lastPage = true;
-        return iziToast.info({
+        iziToast.info({
           position: 'topRight',
           message: "We're sorry, but you've reached the end of search results.",
         });
